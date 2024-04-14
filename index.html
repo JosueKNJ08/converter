@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <div class="box1">
+                <p id="infoMonnaieEntree">
+                    1 EURO =
+                </p>
+                <br>
+                <p id="infoMonnaieSortie">
+                    650 FCFA
+                </p>
+                <br>
+                <p id="maj">Mis à jour le 14 avril 2024 à 21:00:00 UTC</p>
+            </div>
+            <br>
+            <div class="box2">
+                <div class="entree">
+                    <select name="devise_entree" id="deviseEntree">
+                        <option value="selectionEntree" selected disabled>Devise</option>
+                        <option value="fcfaEntree">FCFA</option>
+                        <option value="euroEntree">EUR</option>
+                        <option value="livresEntree">LIR</option>
+                    </select>
+                    <br>
+                    <input type="text">
+                </div>
+                <div class="sortie">
+                    <select name="devise_sortie" id="deviseSortie">
+                        <option value="selectionSortie" selected disabled>Devise</option>
+                        <option value="fcfaSortie">FCFA</option>
+                        <option value="euroSortie">EUR</option>
+                        <option value="livresSortie">LIR</option>
+                    </select>
+                    <br>
+                    <input type="text">
+                </div>
+            </div>
+            <button id="convert">Convertir</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

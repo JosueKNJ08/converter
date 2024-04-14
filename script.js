@@ -1,0 +1,1 @@
+const monnaieEntree = document.getElementById("infoMonnaieEntree");
